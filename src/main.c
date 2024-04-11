@@ -1,3 +1,5 @@
+// Factorio blueprint builder - source code
+
 #include "blueprint_builder.h"
 
 int	main(int argc, char **argv)

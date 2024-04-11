@@ -1,3 +1,5 @@
+// Factorio blueprint builder - header
+
 #ifndef BLUEPRINT_BUILDER_H
 # define BLUEPRINT_BUILDER_H
 

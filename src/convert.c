@@ -1,3 +1,5 @@
+// Factorio blueprint builder - source code
+
 #include "blueprint_builder.h"
 
 inline static char	*build_command(char *infile, char *outfile)

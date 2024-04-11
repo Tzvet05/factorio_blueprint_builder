@@ -1,3 +1,5 @@
+// Factorio blueprint builder - source code
+
 #include "blueprint_builder.h"
 
 void	puterr(char *str1, char *str2)
