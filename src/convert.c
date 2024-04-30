@@ -2,7 +2,7 @@
 
 #include "blueprint_builder.h"
 
-inline static char	*build_command(char *infile, char *outfile)
+inline static int	*build_command(char *infile, char *outfile)
 {
 	char	*command;
 	size_t	i;
@@ -24,7 +24,7 @@ inline static char	*build_command(char *infile, char *outfile)
 	return (command);
 }
 
-inline static char	check_files(char *infile, char *outfile)
+inline static int	check_files(char *infile, char *outfile)
 {
 	struct stat	path;
 
@@ -43,10 +43,10 @@ inline static char	check_files(char *infile, char *outfile)
 	return (0);
 }
 
-inline static char	check_args(char *infile, char *outfile)
+inline static int	check_args(char *infile, char *outfile)
 {
 	size_t	len;
-	char	error;
+	int		error;
 
 	error = check_files(infile, outfile);
 	if (error != 0)
@@ -72,7 +72,7 @@ inline static char	check_args(char *infile, char *outfile)
 	return (0);
 }
 
-char	file_to_blueprint(char *infile, char *outfile)
+int	file_to_blueprint(char *infile, char *outfile)
 {
 	char	*command;
 	int		error;
